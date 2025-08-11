@@ -1,5 +1,5 @@
 {
-  "name": "machinetest",
+  "name": "machinetest-frontend",
   "version": "1.0.0",
   "private": true,
   "engines": {
