@@ -146,6 +146,7 @@ app.get("/seed", async (req, res) => {
   }
 });
 
+// ===== Local Dev Server (skip in Vercel) =====
 if (process.env.NODE_ENV !== "production") {
   const PORT = process.env.PORT || 5000;
   app.listen(PORT, () => {
@@ -153,6 +154,5 @@ if (process.env.NODE_ENV !== "production") {
   });
 }
 
-export default app
-
-
+// ===== Export for Vercel =====
+export default app;
